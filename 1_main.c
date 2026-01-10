@@ -4,9 +4,10 @@
 #include "queue.h"
 #include "tree.h"
 #include "graph.h"
+#include "menu.h"
 
 int main() {
-    Node* list = NULL;
+   /* Node* list = NULL;
     Node* stack = NULL;
     Queue q; initQueue(&q);
     Node* tree = NULL;
@@ -31,7 +32,21 @@ int main() {
 
     listDisplay(list);
     inorder(tree);
-    displayGraph(g);
+    displayGraph(g);*/
+
+
+
+    // 1. Initialisation de la liste vide
+    Node *maListeDeTaches = NULL; 
+
+    // 2. Initialisation du graphe (ex: 10 sommets max)
+    Graph *monGraphe = createGraph(10); 
+
+    // 3. Lancement du menu
+    // Note: on passe l'adresse de la liste (&maListeDeTaches) pour le double pointeur
+    menuPrincipal(&maListeDeTaches, monGraphe);
+
+
 
     return 0;
 }
