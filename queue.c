@@ -7,6 +7,8 @@ void initQueue(Queue* q) {
 }
 
 void enqueue(Queue* q, Task* task) {
+    /* mark task as in-progress when enqueued */
+    task->status = TASK_EN_COURS;
     Node* n = createNode(task);
     if (!q->tail)
         q->head = q->tail = n;
@@ -23,5 +25,7 @@ Task* dequeue(Queue* q) {
     q->head = tmp->next;
     if (!q->head) q->tail = NULL;
     free(tmp);
+    /* mark task as completed when dequeued */
+    if (t) t->status = TASK_TERMINEE;
     return t;
 }
