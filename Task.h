@@ -2,9 +2,9 @@
 #define TASK_H
 
 typedef enum {
-    TASK_A_FAIRE,
-    TASK_EN_COURS,
-    TASK_TERMINEE
+    TASK_A_FAIRE,   // 0 → tâche dans la liste principale
+    TASK_EN_COURS,   // 1 → tâche dans la file / en cours d’exécution
+    TASK_TERMINEE     // 2 → tâche exécutée 
 } TaskStatus;
 
 typedef struct {
