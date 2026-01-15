@@ -40,10 +40,10 @@ int main() {
     Node *maListeDeTaches = NULL; 
 
     // 2. Initialisation du graphe (ex: 10 sommets max)
-    Graph *monGraphe = createGraph(10); 
+    Graph *monGraphe = createGraph(5); 
 
     // 3. Lancement du menu
-    // Note: on passe l'adresse de la liste (&maListeDeTaches) pour le double pointeur
+
     menuPrincipal(&maListeDeTaches, monGraphe);
 
 

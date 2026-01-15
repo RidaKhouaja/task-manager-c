@@ -95,7 +95,7 @@ void menuGraphe(Graph *g, Node *tasks) {
         if (choix == 3) break;
         if (choix == 1) {
             int src = 0, dest = 0;
-            printf("Index sommet source (0..n-1): "); if (!fgets(line, sizeof(line), stdin)) break; sscanf(line, "%d", &src);
+            printf("Index sommet source (0..4): "); if (!fgets(line, sizeof(line), stdin)) break; sscanf(line, "%d", &src);
             printf("ID tache destination: "); if (!fgets(line, sizeof(line), stdin)) break; sscanf(line, "%d", &dest);
             Task* d = getTaskById(tasks, dest);
             if (!d) printf("Tache destination %d introuvable.\n", dest);
