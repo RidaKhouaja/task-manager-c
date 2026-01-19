@@ -64,7 +64,6 @@ gcc -Wall -Wextra -std=c11 -o TaskManager *.c
 
 ---
 
-Si vous souhaitez que j'ajoute une section "Contribuer" ou des exemples d'utilisation plus détaillés, dites-le et je l'ajouterai.
 
 
 
